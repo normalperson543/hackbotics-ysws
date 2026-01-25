@@ -5,6 +5,7 @@ import {
 } from "lucide-react";
 import "./App.css";
 import shopItems from "./assets/shop-items.json" with { type: "json" };
+import teamList from "./assets/rsvp-team-list.json" with { type: "json" };
 import ShopMiniItem from "./components/shop-mini-item";
 function App() {
   return (
@@ -95,7 +96,7 @@ function App() {
         <h2 className="text-2xl font-bold text-center">
           Your time designing and building your robot can get you...
         </h2>
-        <div className="flex flex-row flex-wrap gap-4 justify-center">
+        <div className="flex flex-row flex-wrap gap-8 justify-center mt-8">
           {shopItems.shopItems.map((s) => (
             <ShopMiniItem
               imageUrl={s.imageUrl}
@@ -104,6 +105,53 @@ function App() {
               key={s.id}
             />
           ))}
+        </div>
+        <div className="text-3xl flex flex-row flex-wrap gap-4 items-center">
+          <p>
+            <b>Don&apos;t know where to start?</b> Join the official Hack Club
+            channel at
+          </p>
+          <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
+            <p className="text-blue-600">#hackbotics-ysws</p>
+          </div>
+          <p>.</p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className="flex flex-row justify-between items-center">
+            <h2 className="text-2xl font-bold">Teams that have RSVP'd!</h2>
+            <button className="shadow-md shadow-gray-500 p-2 bg-linear-45 from-indigo-50 to-indigo-400 rounded-md font-bold text-xl hover:from-indigo-500 hover:to-indigo-100 transition duration-200 hover:scale-110 hover:rotate-2">
+              Get your team here :3
+            </button>
+          </div>
+          <table className="max-h-48 overflow-y-auto">
+            <thead>
+              <tr>
+                <th scope="col" className="text-left w-1/10">
+                  Team number
+                </th>
+                <th scope="col" className="text-left">
+                  Team name
+                </th>
+                <th scope="col" className="text-left">
+                  Location
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {teamList.teamList.map((t) => (
+                <tr key={t.teamNumber} className="border-y border-y-indigo-400">
+                  <th scope="row" className="text-left w-1/10 py-2">
+                    {t.teamNumber}
+                  </th>
+                  <td>{t.name}</td>
+                  <td>{t.location}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h2 className="text-2xl font-bold">FAQ</h2>
         </div>
       </div>
     </div>

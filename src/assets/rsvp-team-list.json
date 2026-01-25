@@ -1,0 +1,29 @@
+{
+  "teamList": [
+    {
+      "name": "Sample Team",
+      "teamNumber": "0000A",
+      "location": "Los Angeles, CA"
+    },
+    {
+      "name": "Sample Team",
+      "teamNumber": "0000A",
+      "location": "Los Angeles, CA"
+    },
+    {
+      "name": "Sample Team",
+      "teamNumber": "0000A",
+      "location": "Los Angeles, CA"
+    },
+    {
+      "name": "Sample Team",
+      "teamNumber": "0000A",
+      "location": "Los Angeles, CA"
+    },
+    {
+      "name": "Sample Team",
+      "teamNumber": "0000A",
+      "location": "Los Angeles, CA"
+    }
+  ]
+}
