@@ -8,12 +8,19 @@ import shopItems from "./assets/shop-items.json" with { type: "json" };
 import teamList from "./assets/rsvp-team-list.json" with { type: "json" };
 import ShopMiniItem from "./components/shop-mini-item";
 import Collapsible from "./components/collapsible";
+import { init } from "@plausible-analytics/tracker";
+if (import.meta.env.VITE_PLAUSIBLE_URL && import.meta.env.VITE_SITE_URL) {
+  init({
+    domain: import.meta.env.VITE_SITE_URL,
+    endpoint: `https://${import.meta.env.VITE_PLAUSIBLE_URL}/api/event`,
+  });
+}
 function App() {
   return (
     <div className="w-full h-full">
       <a href="https://hackclub.com/">
         <img
-          className="absolute top-0 left-2 border-0 w-36 z-10 hover:rotate-2 transition duration-200"
+          className="absolute top-0 left-2 border-0 w-36 z-10 hover:rotate-3 hover:scale-105 transition duration-200"
           src="https://assets.hackclub.com/flag-orpheus-top.svg"
           alt="Hack Club"
         />
@@ -43,12 +50,16 @@ function App() {
           Image courtesy of Huskytech Robotics
         </div>
         <div className="flex flex-row gap-4 absolute -bottom-8">
-          <button className="shadow-md shadow-gray-500 px-6 py-4 bg-linear-45 from-indigo-50 to-indigo-400 rounded-md font-bold text-xl hover:from-indigo-500 hover:to-indigo-100 transition duration-200 hover:scale-110 hover:rotate-2">
-            RSVP!
-          </button>
-          <button className="shadow-md shadow-gray-500 px-6 py-4 bg-indigo-100 rounded-md font-bold text-xl hover:bg-indigo-200 transition duration-200">
-            What can I get?
-          </button>
+          <a href="https://forms.fillout.com/t/vE9xVwaTTWus" target="_blank">
+            <button className="shadow-md shadow-gray-500 px-6 py-4 bg-linear-45 from-indigo-50 to-indigo-400 rounded-md font-bold text-xl hover:from-indigo-500 hover:to-indigo-100 transition duration-200 hover:scale-110 hover:rotate-2">
+              RSVP!
+            </button>
+          </a>
+          <a href="#shop">
+            <button className="shadow-md shadow-gray-500 px-6 py-4 bg-indigo-100 rounded-md font-bold text-xl hover:bg-indigo-200 transition duration-200">
+              What can I get?
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col gap-4 px-8 py-16">
@@ -106,7 +117,7 @@ function App() {
             <p>Let&apos;s get your team to Worlds.</p>
           </div>
         </div>
-        <h2 className="text-2xl font-bold text-center">
+        <h2 className="text-2xl font-bold text-center" id="shop">
           Your time designing and building your robot can get you...
         </h2>
         <div className="flex flex-row flex-wrap gap-8 justify-center mt-8">
@@ -124,17 +135,24 @@ function App() {
             <b>Don&apos;t know where to start?</b> Join the official Hack Club
             channel at
           </p>
-          <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
-            <p className="text-blue-600">#hackbotics-ysws</p>
-          </div>
+          <a
+            href="https://app.slack.com/client/E09V59WQY1E/C0AAQRFTMEJ"
+            target="_blank"
+          >
+            <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
+              <p className="text-blue-600">#hackbotics-ysws</p>
+            </div>
+          </a>
           <p>.</p>
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex flex-row justify-between items-center">
             <h2 className="text-2xl font-bold">Teams that have RSVP'd!</h2>
-            <button className="shadow-md shadow-gray-500 p-2 bg-linear-45 from-indigo-50 to-indigo-400 rounded-md font-bold text-xl hover:from-indigo-500 hover:to-indigo-100 transition duration-200 hover:scale-110 hover:rotate-2">
-              Get your team here :3
-            </button>
+            <a href="https://forms.fillout.com/t/vE9xVwaTTWus" target="_blank">
+              <button className="shadow-md shadow-gray-500 p-2 bg-linear-45 from-indigo-50 to-indigo-400 rounded-md font-bold text-xl hover:from-indigo-500 hover:to-indigo-100 transition duration-200 hover:scale-110 hover:rotate-2">
+                Get your team here :3
+              </button>
+            </a>
           </div>
           <table className="max-h-48 overflow-y-auto">
             <thead>
