@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="w-full h-full">
+      <div
+        className="w-full px-8 py-12 flex flex-col gap-2 bg-cover bg-center relative items-start"
+        style={{ backgroundImage: "url('/hero-banner.jpg')" }}
+      >
+        <div className="flex flex-row gap-2 justify-between items-center w-full">
+          <div className="p-6 bg-white/80 backdrop-opacity-95 backdrop-blur-sm rounded-lg flex flex-col gap-2 w-3/5">
+            <p className="font-bold text-6xl">Hackbotics!</p>
+            <p className="text-2xl font-bold">
+              Get your VEX Robotics team and robot funded.
+            </p>
+          </div>
+          <div className="p-6 bg-white/80 backdrop-opacity-95 backdrop-blur-sm rounded-lg w-fit flex flex-row gap-4 items-center">
+            <div className="rounded-full w-4 h-4 bg-green-400"></div>
+            <p className="text-2xl font-bold">0 RSVPs</p>
+          </div>
+        </div>
+        <div className="p-1 bg-white/80 backdrop-opacity-95 backdrop-blur-sm rounded-lg w-fit relative bottom-0 right-0">
+          Image courtesy of Huskytech Robotics
+        </div>
+        <button className="shadow-md shadow-gray-500 px-6 py-4 bg-gradient">
+          RSVP
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
