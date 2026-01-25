@@ -7,9 +7,22 @@ import "./App.css";
 import shopItems from "./assets/shop-items.json" with { type: "json" };
 import teamList from "./assets/rsvp-team-list.json" with { type: "json" };
 import ShopMiniItem from "./components/shop-mini-item";
+import Collapsible from "./components/collapsible";
 function App() {
   return (
     <div className="w-full h-full">
+      <a href="https://hackclub.com/">
+        <img
+          className="absolute top-0 left-2 border-0 w-36 z-10 hover:rotate-2 transition duration-200"
+          src="https://assets.hackclub.com/flag-orpheus-top.svg"
+          alt="Hack Club"
+        />
+      </a>
+      <div className="w-full p-2 bg-yellow-400 text-center font-bold">
+        <p>
+          This event has is not official and is awaiting sponsors and logistics.
+        </p>
+      </div>
       <div
         className="w-full px-8 py-12 flex flex-col gap-2 bg-cover bg-center relative items-start"
         style={{ backgroundImage: "url('/hero-banner.jpg')" }}
@@ -152,6 +165,58 @@ function App() {
         </div>
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-bold">FAQ</h2>
+          <Collapsible title="How do I join?">
+            <p>
+              You can RSVP early for the event to express your interest!
+              We&apos;ll share additional info when the event goes live.
+            </p>
+          </Collapsible>
+          <Collapsible title="Am I eligible?">
+            <p>
+              This event is open to middle and high school VEX V5 teams. As long
+              as you are 13-18 and are still in middle or high school (and
+              didn&apos;t do Hackatime fraud!), you can participate in this
+              event.
+            </p>
+          </Collapsible>
+          <Collapsible title="How do I join?">
+            <p>
+              You can RSVP early for the event to express your interest! We’ll
+              share additional info when the event goes live.
+            </p>
+          </Collapsible>
+        </div>
+      </div>
+      <div className="p-16 bg-black flex flex-row gap-4 text-white items-start">
+        <img src="/flag-standalone-wtransparent.svg" width={128} />
+        <div className="flex flex-col gap-8">
+          <div>
+            <p className="text-2xl font-bold">A Hack Club initative</p>
+            <p>
+              The Hack Foundation is a 501(c)(3) non-profit organization d.b.a.
+              Hack Club (EIN: 81-2908499)
+            </p>
+            <a href="https://hackclub.com" className="underline">
+              About Hack Club
+            </a>
+          </div>
+          <div>
+            <p>
+              This event is not affiliated or endorsed by VEX Robotics or
+              Robosource.
+            </p>
+          </div>
+          <div>
+            <p>Made with love by normalperson543 and these contributors.</p>
+            <p>
+              Need to get in touch? Contact normalperson543 on Hack Club Slack,
+              or email{" "}
+              <a href="mailto:hackbotics@octotwelve.xyz" className="underline">
+                hackbotics@octotwelve.xyz
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
     </div>
