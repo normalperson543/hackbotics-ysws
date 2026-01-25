@@ -1,0 +1,40 @@
+{
+  "shopItems": [
+    {
+      "id": 1,
+      "name": "Test Item",
+      "hours": 1,
+      "imageUrl": "/hero-banner.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Test Item",
+      "hours": 1,
+      "imageUrl": "/hero-banner.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Test Item",
+      "hours": 1,
+      "imageUrl": "/hero-banner.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Test Item",
+      "hours": 1,
+      "imageUrl": "/hero-banner.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Test Item",
+      "hours": 1,
+      "imageUrl": "/hero-banner.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Test Item",
+      "hours": 1,
+      "imageUrl": "/hero-banner.jpg"
+    }
+  ]
+}
