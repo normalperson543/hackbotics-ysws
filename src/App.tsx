@@ -54,7 +54,7 @@ function App() {
             </div>
             <div className="p-6 bg-white/80 backdrop-opacity-95 backdrop-blur-sm rounded-lg w-fit flex flex-row gap-4 items-center">
               <div className="rounded-full w-4 h-4 bg-green-400"></div>
-              <p className="text-2xl font-bold">0 RSVPs</p>
+              <p className="text-2xl font-bold">{teamList.rsvpCount} RSVPs</p>
             </div>
           </div>
           <div className="p-1 bg-white/80 backdrop-opacity-95 backdrop-blur-sm rounded-lg w-fit absolute bottom-4 right-4">
@@ -225,10 +225,16 @@ function App() {
                 this event.
               </p>
             </Collapsible>
-            <Collapsible title="How do I join?">
+            <Collapsible title="Can multiple people on my team submit projects?">
               <p>
-                You can RSVP early for the event to express your interest! We’ll
-                share additional info when the event goes live.
+                Yep! However, hours will be tracked separately for each member
+                on the team, and members will need to purchase items themselves.
+              </p>
+            </Collapsible>
+            <Collapsible title="How can I track time?">
+              <p>
+                You'll use Hackatime to track code and CAD activity and Lapse to
+                record yourself building.
               </p>
             </Collapsible>
           </div>

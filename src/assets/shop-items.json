@@ -28,13 +28,13 @@
       "id": 5,
       "name": "$200 Competition Grant",
       "hours": 1,
-      "imageUrl": "/hero-banner.jpg"
+      "imageUrl": "/shop/competition.png"
     },
     {
       "id": 6,
-      "name": "Test Item",
+      "name": "Team Registration Grant",
       "hours": 1,
-      "imageUrl": "/hero-banner.jpg"
+      "imageUrl": "/shop/team-registration.png"
     }
   ]
 }
