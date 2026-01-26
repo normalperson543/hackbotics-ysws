@@ -138,10 +138,16 @@ function App() {
           <h2 className="text-2xl font-bold text-center" id="shop">
             Your time designing and building your robot can get you...
           </h2>
-          <p className="font-bold text-center">
-            (The shop items below are sold by VEX Robotics or Robosource. They
-            are not affiliated with this event.)
-          </p>
+          <div className="flex flex-col gap-1">
+            <p className="font-bold text-center">
+              (Not all items are listed here! This is what you should expect
+              though.)
+            </p>
+            <p className="font-bold text-center">
+              (The shop items below are sold by VEX Robotics or Robosource. They
+              are not affiliated with this event.)
+            </p>
+          </div>
           <div className="flex flex-row flex-wrap gap-8 justify-center mt-8">
             {shopItems.shopItems.map((s) => (
               <ShopMiniItem
