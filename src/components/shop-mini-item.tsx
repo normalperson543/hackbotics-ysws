@@ -9,7 +9,7 @@ export default function ShopMiniItem({
 }) {
   return (
     <div className="p-4 rounded-md bg-indigo-400 shadow-md shadow-gray-500 flex flex-col gap-2 text-white hover:scale-105 transition duration-200 relative">
-      <div className="p-4 bg-red-500 rounded-full border-white border-4 rotate-24 absolute -top-8 -right-8 h-24 w-24">
+      <div className="p-4 bg-red-500 rounded-full border-white border-4 rotate-12 absolute -top-8 -right-8 h-24 w-24">
         {hourRequirement && (
           <div className="flex flex-col items-center">
             <p className="text-3xl text-center">{hourRequirement}</p>
