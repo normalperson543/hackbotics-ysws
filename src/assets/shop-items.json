@@ -2,31 +2,31 @@
   "shopItems": [
     {
       "id": 1,
-      "name": "Test Item",
-      "hours": 67,
-      "imageUrl": "/hero-banner.jpg"
+      "name": "VEX Hardware and Metal Kit",
+      "hours": 1,
+      "imageUrl": "/shop/hardware-and-metal-kit.jpg"
     },
     {
       "id": 2,
-      "name": "Test Item",
+      "name": "VEX Booster Kit",
       "hours": 1,
-      "imageUrl": "/hero-banner.jpg"
+      "imageUrl": "/shop/booster.jpg"
     },
     {
       "id": 3,
-      "name": "Test Item",
+      "name": "VEX Pneumatics Kit",
       "hours": 1,
-      "imageUrl": "/hero-banner.jpg"
+      "imageUrl": "/shop/pneumatics.jpg"
     },
     {
       "id": 4,
-      "name": "Test Item",
+      "name": "RoboSource Battery Station",
       "hours": 1,
-      "imageUrl": "/hero-banner.jpg"
+      "imageUrl": "/shop/battery-station.jpg"
     },
     {
       "id": 5,
-      "name": "Test Item",
+      "name": "$200 Competition Grant",
       "hours": 1,
       "imageUrl": "/hero-banner.jpg"
     },

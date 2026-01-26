@@ -37,13 +37,13 @@ function App() {
         </a>
         <div className="w-full p-2 bg-yellow-400 text-center font-bold">
           <p>
-            This event has is not official and is awaiting sponsors and
+            This event is <u>not official</u> and is awaiting sponsors and
             logistics.
           </p>
         </div>
         <div
-          className="w-full px-8 py-12 flex flex-col gap-2 bg-cover bg-center relative items-start"
-          style={{ backgroundImage: "url('/hero-banner.jpg')" }}
+          className="w-full px-8 py-36 flex flex-col gap-2 bg-cover bg-center relative items-start"
+          style={{ backgroundImage: "url('/hero-banner.jpeg')" }}
         >
           <div className="flex flex-row gap-2 justify-between items-center w-full">
             <div className="p-6 bg-white/80 backdrop-opacity-95 backdrop-blur-sm rounded-lg flex flex-col gap-2 w-3/5">
@@ -73,7 +73,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-4 px-8 py-16">
+        <div className="flex flex-col gap-8 px-8 py-16">
           <div className="text-3xl flex flex-col gap-2 items-start justify-normal">
             <p>It&apos;s really simple.</p>
             <div className="flex flex-row flex-wrap items-center gap-2">
@@ -102,6 +102,12 @@ function App() {
               We&apos;ll cover the <b>team registration</b>,{" "}
               <b>competition fees</b> and <b>parts you need</b>.
             </p>
+          </div>
+        </div>
+        <img src="/second-banner.png" className="w-full" />
+        <div className="flex flex-col gap-8 px-8 py-16">
+          <div className="text-right w-full">
+            Images courtesy of Huskytech Robotics
           </div>
           <div className="flex flex-col gap-4">
             <h2 className="text-2xl font-bold">Dear Future VEX Team Leader,</h2>
@@ -132,6 +138,10 @@ function App() {
           <h2 className="text-2xl font-bold text-center" id="shop">
             Your time designing and building your robot can get you...
           </h2>
+          <p className="font-bold text-center">
+            (The shop items below are sold by VEX Robotics or Robosource. They
+            are not affiliated with this event.)
+          </p>
           <div className="flex flex-row flex-wrap gap-8 justify-center mt-8">
             {shopItems.shopItems.map((s) => (
               <ShopMiniItem
