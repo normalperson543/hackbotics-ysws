@@ -161,16 +161,11 @@ function App() {
           <div className="text-3xl flex flex-row flex-wrap gap-4 items-center">
             <p>
               <b>Don&apos;t know where to start?</b> Join the official Hack Club
-              channel at
+              Slack channel at
             </p>
-            <a
-              href="https://app.slack.com/client/E09V59WQY1E/C0AAQRFTMEJ"
-              target="_blank"
-            >
-              <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
-                <p className="text-blue-600">#hackbotics-ysws</p>
-              </div>
-            </a>
+            <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
+              <p className="text-blue-600">#hackbotics-ysws</p>
+            </div>
             <p>.</p>
           </div>
           <div className="flex flex-col gap-4">
@@ -265,7 +260,23 @@ function App() {
               </p>
             </div>
             <div>
-              <p>Made with love by normalperson543 and these contributors.</p>
+              <p>
+                Made with love by normalperson543 and{" "}
+                <a
+                  href="https://github.com/normalperson543/hackbotics-ysws/graphs/contributors"
+                  className="underline"
+                  target="_blank"
+                >
+                  these contributors
+                </a>
+                . <a
+                  href="https://github.com/normalperson543/hackbotics-ysws"
+                  className="underline"
+                  target="_blank"
+                >
+                  Open source.
+                </a>
+              </p>
               <p>
                 Need to get in touch? Contact normalperson543 on Hack Club
                 Slack, or email{" "}
