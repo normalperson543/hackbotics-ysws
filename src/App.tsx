@@ -10,6 +10,7 @@ import ShopMiniItem from "./components/shop-mini-item";
 import Collapsible from "./components/collapsible";
 import { init } from "@plausible-analytics/tracker";
 import { Helmet } from "react-helmet-async";
+import type { Team } from "./lib/types";
 if (import.meta.env.VITE_PLAUSIBLE_URL && import.meta.env.VITE_SITE_URL) {
   init({
     domain: import.meta.env.VITE_SITE_URL,
@@ -195,7 +196,7 @@ function App() {
                 </tr>
               </thead>
               <tbody>
-                {teamList.teamList.map((t) => (
+                {teamList.teamList.map((t: Team) => (
                   <tr
                     key={t.teamNumber}
                     className="border-y border-y-indigo-400"
@@ -209,6 +210,7 @@ function App() {
                 ))}
               </tbody>
             </table>
+            {teamList.teamList.length === 0 && <p>No teams registered yet!</p>}
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-bold">FAQ</h2>
