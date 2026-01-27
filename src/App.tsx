@@ -140,8 +140,8 @@ function App() {
           </h2>
           <div className="flex flex-col gap-1">
             <p className="font-bold text-center">
-              (Not all items are listed here! This is what you should expect
-              though.)
+              (Not all items are listed here, and no hour amounts have been
+              decided yet!)
             </p>
             <p className="font-bold text-center">
               (The shop items below are sold by VEX Robotics or Robosource. They
@@ -269,7 +269,8 @@ function App() {
                 >
                   these contributors
                 </a>
-                . <a
+                .{" "}
+                <a
                   href="https://github.com/normalperson543/hackbotics-ysws"
                   className="underline"
                   target="_blank"

@@ -12,7 +12,7 @@ export default function ShopMiniItem({
       <div className="p-4 bg-red-500 rounded-full border-white border-4 rotate-12 absolute -top-8 -right-8 h-24 w-24">
         {hourRequirement && (
           <div className="flex flex-col items-center">
-            <p className="text-3xl text-center">{/*hourRequirement*/}XX</p>
+            <p className="text-3xl text-center">{/*hourRequirement*/}??</p>
             <p>hour{hourRequirement != 1 && "s"}</p>
           </div>
         )}
