@@ -1,10 +1,4 @@
 {
   "rsvpCount": 0,
-  "teamList": [
-    {
-      "name": "Sample Team",
-      "teamNumber": "0000A",
-      "location": "Los Angeles, CA"
-    }
-  ]
+  "teamList": []
 }
