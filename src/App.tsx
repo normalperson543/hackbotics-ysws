@@ -164,9 +164,11 @@ function App() {
               <b>Don&apos;t know where to start?</b> Join the official Hack Club
               Slack channel at
             </p>
-            <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
-              <p className="text-blue-600">#hackbotics-ysws</p>
-            </div>
+            <a href="https://hackclub.enterprise.slack.com/archives/C0AAQRFTMEJ">
+              <div className="rounded-md p-2 bg-blue-100 hover:scale-105 transition duration-200">
+                <p className="text-blue-600">#hackbotics-ysws</p>
+              </div>
+            </a>
             <p>.</p>
           </div>
           <div className="flex flex-col gap-4">
