@@ -1,4 +1,15 @@
 {
-  "rsvpCount": 0,
-  "teamList": []
+  "rsvpCount": 5,
+  "teamList": [
+    {
+      "name": "Footlong",
+      "teamNumber: "550F",
+      "location": "Apopka, Florida, United States"
+    },
+    {
+      "name": "Kernel Bye",
+      "teamNumber": "2381A",
+      "location": "Ottawa, Ontario, Canada"
+    }
+  ]
 }
