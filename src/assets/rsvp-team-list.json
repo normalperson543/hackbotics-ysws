@@ -1,5 +1,5 @@
 {
-  "rsvpCount": 5,
+  "rsvpCount": 9,
   "teamList": [
     {
       "name": "Footlong",
@@ -10,6 +10,16 @@
       "name": "Kernel Bye",
       "teamNumber": "2381A",
       "location": "Ottawa, Ontario, Canada"
+    },
+    {
+      "name": "Cut",
+      "teamNumber": "19400C",
+      "location": "Castro Valley, California, United States"
+    },
+    {
+      "name": "Sleepy Pandas",
+      "teamNumber": "8737B",
+      "location": "Arcadia, California, United States"
     }
   ]
 }
