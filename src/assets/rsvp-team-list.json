@@ -1,5 +1,5 @@
 {
-  "rsvpCount": 9,
+  "rsvpCount": 11,
   "teamList": [
     {
       "name": "Footlong",
@@ -20,6 +20,11 @@
       "name": "Sleepy Pandas",
       "teamNumber": "8737B",
       "location": "Arcadia, California, United States"
+    },
+    {
+      "name": "Berman Hebrew Academy Cougars",
+      "teamNumber": "21454A",
+      "location": "Rockville, Maryland, United States"
     }
   ]
 }
