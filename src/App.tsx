@@ -242,6 +242,11 @@ function App() {
                 record yourself building.
               </p>
             </Collapsible>
+            <Collapsible title="Do I have to be committed to this event when I RSVP?">
+              <p>
+                Nope! This is just to gauge interest within the community.
+              </p>
+            </Collapsible>
           </div>
         </div>
         <div className="p-16 bg-black flex flex-row gap-4 text-white items-start">
